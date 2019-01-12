@@ -5,7 +5,6 @@ resource "aws_acm_certificate" "default" {
   provider                  = "aws.cert"
 
   tags {
-    Name      = "${var.domain_name}"
     terraform = "true"
   }
 }
